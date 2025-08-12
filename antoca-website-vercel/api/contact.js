@@ -1,5 +1,5 @@
 // /api/contact.js
-import { Resend } from '@resend/node';
+import { Resend } from 'resend';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ ok: false, error: 'Method not allowed' });
@@ -21,7 +21,7 @@ ${message}
 
     // Send email
     await resend.emails.send({
-      from: 'ANTOCA <mail@antoca-training.com>',
+      from: 'ANTOCA <onboarding@resend.dev>',
       to: [to],
       subject: 'Neue Anfrage über die Website',
       text
