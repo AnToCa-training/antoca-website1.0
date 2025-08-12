@@ -1,0 +1,12 @@
+{
+  "name": "antoca-site",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "vercel-build": "echo 'Static build'"
+  },
+  "dependencies": {
+    "@resend/node": "^4.0.0"
+  }
+}
